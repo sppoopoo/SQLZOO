@@ -1,0 +1,29 @@
+SELECT basics
+#1. select population from world where name ='Germany';
+
+#2.select name, population from world where name in ('Sweden','Norway','Denmark');
+
+#3.select name,area from world where area between 200000 and 250000;
+
+SELECT names
+#1.select name from world where name like 'Y%';
+
+#2.select name from world where name like '%y';
+
+#3.select name from world where name like '%x%';
+
+#4.select name from world where name like '%land';
+
+#5.select name from world where name like 'C%' and name like '%ia';
+
+#6.select name from world where name like '%oo%';
+
+#7.select name from world where name like '%a%a%a%';
+
+#8.select name from world where name like '_t%';
+
+#9.select name from world where name like '%o__o%';
+
+#10.select name from world where name like '____';
+
+#11.
