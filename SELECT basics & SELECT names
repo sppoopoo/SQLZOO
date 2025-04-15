@@ -1,29 +1,42 @@
 SELECT basics
-#1. select population from world where name ='Germany';
+#1.Show the population of Germany 
+--> select population from world where name ='Germany';
 
-#2.select name, population from world where name in ('Sweden','Norway','Denmark');
+#2.Show the name and the population for 'Denmark', 'Norway', 'Sweden'
+-->select name, population from world where name in ('Sweden','Norway','Denmark');
 
-#3.select name,area from world where area between 200000 and 250000;
+#3.show the country and the area for countries with an area between 200,000 and 250,000.
+-->select name,area from world where area between 200000 and 250000;
 
 SELECT names
-#1.select name from world where name like 'Y%';
+#1.Find the country that start with Y
+-->select name from world where name like 'Y%';
 
-#2.select name from world where name like '%y';
+#2.Find the countries that end with y
+-->select name from world where name like '%y';
 
-#3.select name from world where name like '%x%';
+#3.Find the countries that contain the letter x
+-->select name from world where name like '%x%';
 
-#4.select name from world where name like '%land';
+#4.Find the countries that end with land
+-->select name from world where name like '%land';
 
-#5.select name from world where name like 'C%' and name like '%ia';
+#5.Find the countries that start with C and end with ia
+-->select name from world where name like 'C%' and name like '%ia';
 
-#6.select name from world where name like '%oo%';
+#6.Find the country that has oo in the name
+-->select name from world where name like '%oo%';
 
-#7.select name from world where name like '%a%a%a%';
+#7.Find the countries that have three or more a in the name
+-->select name from world where name like '%a%a%a%';
 
-#8.select name from world where name like '_t%';
+#8.Find the countries that have "t" as the second character.
+-->select name from world where name like '_t%';
 
-#9.select name from world where name like '%o__o%';
+#9.Find the countries that have two "o" characters separated by two others.
+-->select name from world where name like '%o__o%';
 
-#10.select name from world where name like '____';
+#10.Find the countries that have exactly four characters.
+-->select name from world where name like '____';
 
 #11.
