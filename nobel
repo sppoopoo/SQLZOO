@@ -28,11 +28,17 @@
 10. Show year, subject, and name of people who won a 'Medicine' prize in an early year (before 1910, not including 1910) together with winners of a 'Literature' prize in a later year (after 2004, including 2004)
 -->select * from nobel where subject='medicine' and yr < 1910 or subject='literature' and yr >= 2004;
 
-11.
+11. Find all details of the prize won by PETER GRÜNBERG
+-->select * from nobel where winner= 'PETER GRÜNBERG';
 
+12. Find all details of the prize won by EUGENE O'NEILL
+-->select * from nobel where winner = "EUGENE O'NEILL";
 
+13. List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
+-->select winner, yr, subject from nobel where winner like 'Sir%' group by winner order by yr desc;
 
-
+14. Show the 1984 winners and subject ordered by subject and winner name; but list chemistry and physics last.
+-->select winner , subject from nobel where yr = 1984 order by subject in ('physics','chemistry'), subject, winner;
 
 
 
