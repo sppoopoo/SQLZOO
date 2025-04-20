@@ -28,4 +28,8 @@
 10.List the films together with the leading star for all 1962 films.
 -->select title, name from movie m join casting c on (m.id =c.movieid) join actor a on (a.id=c.actorid) where ord =1 and yr =1962;
 
-11.
+11.Which were the busiest years for 'Rock Hudson', show the year and the number of movies he made each year for any year in which he made more than 2 movies.
+-->select m.yr , count(m.title) from movie m join casting  c on m.id =c.movieid join actor a on a.id =c.actorid where a.name ='Rock Hudson' group by m.yr having count(m.title) >2; 
+
+12.List film title and the leading actor for all of the films 'Julie Andrews' played in.
+-->
